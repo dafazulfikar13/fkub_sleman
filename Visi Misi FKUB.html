@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visi & Misi - FKUB Kabupaten Sleman</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0d305c',
+                            900: '#0B1E36',
+                            950: '#071322'
+                        },
+                        orange: {
+                            500: '#f97316',
+                            600: '#F58220'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+        .animate-ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: ticker 30s linear infinite;
+        }
+        .animate-ticker:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- 1. TOP ANNOUNCEMENT TICKER BANNER -->
+    <div class="bg-[#F58220] text-white text-xs md:text-sm font-semibold py-2 overflow-hidden border-b border-orange-600">
+        <div class="whitespace-nowrap animate-ticker flex items-center gap-8">
+            <span class="inline-flex items-center gap-2">
+                <span class="bg-white text-[#F58220] text-[10px] uppercase tracking-wider font-extrabold px-1.5 py-0.5 rounded">PENGUMUMAN</span> 
+                Pendaftaran Verifikasi Rumah Ibadat Dibuka Kembali!
+            </span>
+            <span class="text-orange-200">•</span>
+            <span class="inline-flex items-center gap-2">
+                FKUB Sleman Mempererat Tali Silaturahmi Antar Umat Beragama di Kapanewon Gamping.
+            </span>
+            <span class="text-orange-200">•</span>
+            <span class="inline-flex items-center gap-2">
+                <span class="bg-white text-[#F58220] text-[10px] uppercase tracking-wider font-extrabold px-1.5 py-0.5 rounded">PENGUMUMAN</span> 
+                Pendaftaran Verifikasi Rumah Ibadat Dibuka Kembali!
+            </span>
+            <span class="text-orange-200">•</span>
+            <span class="inline-flex items-center gap-2">
+                FKUB Sleman Mempererat Tali Silaturahmi Antar Umat Beragama di Kapanewon Gamping.
+            </span>
+        </div>
+    </div>
+
+    <!-- 2. NAVBAR HEADER -->
+    <header class="bg-[#0B1E36] text-white sticky top-0 z-50 shadow-md border-b border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- LOGO WEBSITE -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 flex items-center justify-center p-0.5">
+                        <!-- ================= PENEMPATAN LOGO UTAMA ================= -->
+                        <img src="logo-fkub.jpeg" alt="Logo FKUB Sleman" class="w-full h-full object-contain filter drop-shadow">
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-lg sm:text-xl tracking-tight leading-none text-white">FKUB Kabupaten Sleman</h1>
+                        <p class="text-[11px] text-gray-300 font-medium tracking-wide">Forum Kerukunan Umat Beragama</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                        Beranda
+                    </a>
+
+                    <!-- PROFIL (Desktop Dropdown - Active) -->
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-semibold text-white border-b-2 border-[#F58220] flex items-center gap-1 transition-colors">
+                            Profil <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute left-0 mt-1 w-64 bg-white rounded-lg shadow-xl py-2 hidden group-hover:block border border-gray-100 z-50 text-gray-800">
+                            <a href="Tentang_FKUB.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Tentang FKUB Kabupaten Sleman</a>
+                            <a href="Sejarah FKUB.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Sejarah & Perjalanan FKUB Sleman</a>
+                            <a href="Visi Misi FKUB.html" class="block px-4 py-2 text-xs font-bold text-[#F58220] bg-orange-50 transition-colors">Visi & Misi FKUB Kabupaten Sleman</a>
+                            <a href="Tugas dan Fungsi FKUB.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Tugas dan Fungsi FKUB Sleman</a>
+                            <a href="Struktur Organisasi.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Struktur Organisasi FKUB Sleman</a>
+                        </div>
+                    </div>
+
+                    <!-- PROGRAM (Desktop Dropdown) -->
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
+                            Program <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute left-0 mt-1 w-64 bg-white rounded-lg shadow-xl py-2 hidden group-hover:block border border-gray-100 z-50 text-gray-800">
+                            <a href="Program Kerja.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Program Kerja FKUB Sleman</a>
+                            <a href="Kegiatan.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Kegiatan FKUB Kabupaten Sleman</a>
+                            <a href="Dialog Antaragama.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Dialog Antaragama</a>
+                            <a href="Pembinaan Kerukunan.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Pembinaan Kerukunan</a>
+                            <a href="Kolaborasi.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Kolaborasi & Kemitraan</a>
+                        </div>
+                    </div>
+
+                    <!-- LAYANAN (Desktop Dropdown) -->
+                    <div class="relative group">
+                        <button class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
+                            Layanan <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute left-0 mt-1 w-64 bg-white rounded-lg shadow-xl py-2 hidden group-hover:block border border-gray-100 z-50 text-gray-800">
+                            <a href="Permohonan Rumah Ibadat.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Permohonan Rekomendasi Rumah Ibadat</a>
+                            <a href="Konsultasi Kerukunan.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Konsultasi Kerukunan</a>
+                            <a href="Pengaduan Aspirasi.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Pengaduan & Aspirasi</a>
+                            <a href="Informasi Pelayanan.html" class="block px-4 py-2 text-xs font-medium hover:bg-orange-50 hover:text-[#F58220] transition-colors">Informasi Pelayanan</a>
+                        </div>
+                    </div>
+
+                    <a href="Berita FKUB.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors">Berita</a>
+                    <a href="Galeri FKUB.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors">Galeri</a>
+                </nav>
+
+                <!-- Action Button & Search -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#" class="bg-[#F58220] hover:bg-orange-600 text-white font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-md shadow-md transition-all">
+                        BerAKHLAK
+                    </a>
+                    <button class="w-9 h-9 flex items-center justify-center text-gray-300 hover:text-white hover:bg-white/10 rounded-full transition-colors">
+                        <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="lg:hidden flex items-center space-x-2">
+                    <button id="mobile-menu-btn" class="p-2 text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl" id="hamburger-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU CONTAINER -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#071322] border-t border-navy-800 px-4 pt-2 pb-6 space-y-1">
+            <a href="index.html" class="block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-navy-800 hover:text-white">Beranda</a>
+
+            <!-- PROFIL MOBILE DROPDOWN -->
+            <div>
+                <button onclick="toggleMobileDropdown('mobile-profil-dropdown', 'profil-icon')" class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-semibold text-white bg-navy-800">
+                    <span>Profil</span>
+                    <i id="profil-icon" class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+                </button>
+                <div id="mobile-profil-dropdown" class="pl-4 pr-2 py-1 space-y-1 bg-navy-950/50 rounded-md my-1 border-l-2 border-[#F58220]">
+                    <a href="Tentang_FKUB.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Tentang FKUB Kabupaten Sleman</a>
+                    <a href="Sejarah FKUB.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Sejarah & Perjalanan FKUB Sleman</a>
+                    <a href="Visi Misi FKUB.html" class="block px-3 py-2 text-xs font-bold text-[#F58220]">Visi & Misi FKUB Kabupaten Sleman</a>
+                    <a href="Tugas dan Fungsi FKUB.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Tugas dan Fungsi FKUB Sleman</a>
+                    <a href="Struktur Organisasi.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Struktur Organisasi FKUB Sleman</a>
+                </div>
+            </div>
+
+            <!-- PROGRAM MOBILE DROPDOWN -->
+            <div>
+                <button onclick="toggleMobileDropdown('mobile-program-dropdown', 'program-icon')" class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-navy-800 hover:text-white">
+                    <span>Program</span>
+                    <i id="program-icon" class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+                </button>
+                <div id="mobile-program-dropdown" class="hidden pl-4 pr-2 py-1 space-y-1 bg-navy-950/50 rounded-md my-1 border-l-2 border-[#F58220]">
+                    <a href="Program Kerja.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Program Kerja FKUB Sleman</a>
+                    <a href="Kegiatan.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Kegiatan FKUB Kabupaten Sleman</a>
+                    <a href="Dialog Antaragama.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Dialog Antaragama</a>
+                    <a href="Pembinaan Kerukunan.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Pembinaan Kerukunan</a>
+                    <a href="Kolaborasi.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Kolaborasi & Kemitraan</a>
+                </div>
+            </div>
+
+            <!-- LAYANAN MOBILE DROPDOWN -->
+            <div>
+                <button onclick="toggleMobileDropdown('mobile-layanan-dropdown', 'layanan-icon')" class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-navy-800 hover:text-white">
+                    <span>Layanan</span>
+                    <i id="layanan-icon" class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+                </button>
+                <div id="mobile-layanan-dropdown" class="hidden pl-4 pr-2 py-1 space-y-1 bg-navy-950/50 rounded-md my-1 border-l-2 border-[#F58220]">
+                    <a href="Permohonan Rumah Ibadat.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Permohonan Rekomendasi Rumah Ibadat</a>
+                    <a href="Konsultasi Kerukunan.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Konsultasi Kerukunan</a>
+                    <a href="Pengaduan Aspirasi.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Pengaduan & Aspirasi</a>
+                    <a href="Informasi Pelayanan.html" class="block px-3 py-2 text-xs font-medium text-gray-300 hover:text-white">Informasi Pelayanan</a>
+                </div>
+            </div>
+
+            <a href="Berita FKUB.html" class="block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-navy-800 hover:text-white">Berita</a>
+            <a href="Galeri FKUB.html" class="block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-navy-800 hover:text-white">Galeri</a>
+
+            <div class="pt-4 border-t border-gray-800 flex items-center gap-3">
+                <a href="#" class="w-full text-center bg-[#F58220] text-white font-bold text-xs uppercase px-4 py-2.5 rounded-md shadow">
+                    BerAKHLAK
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO BANNER HEADER PAGE -->
+    <section class="relative bg-[#0B1E36] text-white py-16 md:py-20 overflow-hidden">
+        <!-- ================= TEMPAT MENGGANTI FOTO BACKGROUND BANNER ATAS ================= -->
+        <div class="absolute inset-0 z-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80" alt="Visi Misi Banner" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0B1E36] via-[#0B1E36]/90 to-transparent z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Breadcrumbs -->
+            <nav class="flex items-center space-x-2 text-xs text-gray-300 mb-3 font-medium">
+                <a href="index.html" class="hover:text-white transition-colors">Profil</a>
+                <span class="text-orange-400">&gt;</span>
+                <span class="text-white font-semibold">Visi & Misi</span>
+            </nav>
+            <!-- Title -->
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                Visi & Misi FKUB<br>Kabupaten Sleman
+            </h1>
+        </div>
+    </section>
+
+    <!-- 4. ARAH DAN TUJUAN FKUB SECTION -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Foto Frame Offset (Left) -->
+                <div class="lg:col-span-5 relative pr-3 pb-3">
+                    <div class="absolute right-0 bottom-0 w-full h-full bg-[#0B1E36] rounded-2xl transform translate-x-3 translate-y-3"></div>
+                    <!-- ================= TEMPAT MENGGANTI FOTO PENGURUS FKUB ================= -->
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-xl border-2 border-white bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80" alt="Pengurus FKUB Sleman" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <!-- Teks Arah & Tujuan FKUB (Right) -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-6 bg-[#F58220] rounded-full"></div>
+                        <h2 class="text-xl md:text-2xl font-extrabold text-gray-900">Arah dan Tujuan FKUB</h2>
+                    </div>
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        Forum Kerukunan Umat Beragama (FKUB) Kabupaten Sleman hadir sebagai wadah strategis dalam memelihara dan mengembangkan kerukunan umat beragama. Kami percaya bahwa harmonisasi adalah kunci utama membangun Sleman yang sejahtera dan berkarakter.
+                    </p>
+
+                    <!-- 4 Mini Feature Pills / Badges -->
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <div class="bg-orange-50 border border-orange-100 rounded-lg p-3 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-[#F58220] text-white flex items-center justify-center text-xs flex-shrink-0">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gray-800">Kerukunan</span>
+                        </div>
+                        <div class="bg-orange-50 border border-orange-100 rounded-lg p-3 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-[#F58220] text-white flex items-center justify-center text-xs flex-shrink-0">
+                                <i class="fa-solid fa-hands-holding-circle"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gray-800">Toleransi</span>
+                        </div>
+                        <div class="bg-orange-50 border border-orange-100 rounded-lg p-3 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-[#F58220] text-white flex items-center justify-center text-xs flex-shrink-0">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gray-800">Dialog</span>
+                        </div>
+                        <div class="bg-orange-50 border border-orange-100 rounded-lg p-3 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-[#F58220] text-white flex items-center justify-center text-xs flex-shrink-0">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gray-800">Kebersamaan</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. VISI UTAMA BANNER SECTION (NAVY BLUE CARD) -->
+    <section class="bg-[#0B1E36] text-white py-16 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10 space-y-5">
+            <!-- Icon Globe / Visi -->
+            <div class="w-12 h-12 bg-[#F58220] rounded-full flex items-center justify-center mx-auto text-white shadow-lg text-xl">
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <span class="text-[10px] font-extrabold uppercase tracking-widest text-orange-400">VISI UTAMA</span>
+            <h2 class="text-xl md:text-3xl font-extrabold text-white leading-relaxed tracking-tight px-2">
+                "Mewujudkan kehidupan masyarakat Kabupaten Sleman yang harmonis, rukun, dan saling menghargai dalam keberagaman."
+            </h2>
+        </div>
+    </section>
+
+    <!-- 6. MISI FKUB KABUPATEN SLEMAN (6 CARDS DENGAN ANGKA AIRMARK 01-06) -->
+    <section class="py-12 md:py-16 bg-[#F8FAFC]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-[#0B1E36]">Misi FKUB Kabupaten Sleman</h2>
+                <div class="w-12 h-1 bg-[#F58220] mx-auto rounded-full mt-2 mb-3"></div>
+                <p class="text-xs md:text-sm text-gray-500">
+                    Langkah konkret kami dalam mewujudkan kerukunan umat beragama.
+                </p>
+            </div>
+
+            <!-- Grid 6 Misi Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Misi 01 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden space-y-3 group">
+                    <span class="absolute right-4 bottom-1 text-6xl font-black text-gray-100 pointer-events-none transition-colors group-hover:text-orange-100">01</span>
+                    <div class="w-10 h-10 bg-orange-100 text-[#F58220] rounded-lg flex items-center justify-center text-base font-bold">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 z-10 relative">Membangun Dialog</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed z-10 relative">Memfasilitasi ruang komunikasi dan dialog intensif antar pemeluk agama dan tokoh masyarakat.</p>
+                </div>
+
+                <!-- Misi 02 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden space-y-3 group">
+                    <span class="absolute right-4 bottom-1 text-6xl font-black text-gray-100 pointer-events-none transition-colors group-hover:text-orange-100">02</span>
+                    <div class="w-10 h-10 bg-orange-100 text-[#F58220] rounded-lg flex items-center justify-center text-base font-bold">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 z-10 relative">Menjaga Kerukunan</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed z-10 relative">Merawat dan memelihara keharmonisan antarumat beragama sebagai pilar stabilitas daerah.</p>
+                </div>
+
+                <!-- Misi 03 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden space-y-3 group">
+                    <span class="absolute right-4 bottom-1 text-6xl font-black text-gray-100 pointer-events-none transition-colors group-hover:text-orange-100">03</span>
+                    <div class="w-10 h-10 bg-orange-100 text-[#F58220] rounded-lg flex items-center justify-center text-base font-bold">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 z-10 relative">Menguatkan Toleransi</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed z-10 relative">Mengedukasi esensi nilai toleransi dan saling menghormati dengan keberagaman.</p>
+                </div>
+
+                <!-- Misi 04 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden space-y-3 group">
+                    <span class="absolute right-4 bottom-1 text-6xl font-black text-gray-100 pointer-events-none transition-colors group-hover:text-orange-100">04</span>
+                    <div class="w-10 h-10 bg-orange-100 text-[#F58220] rounded-lg flex items-center justify-center text-base font-bold">
+                        <i class="fa-solid fa-users text-sm"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 z-10 relative">Membangun Kolaborasi</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed z-10 relative">Meningkatkan kemitraan dengan pemerintah dan berbagai elemen masyarakat.</p>
+                </div>
+
+                <!-- Misi 05 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden space-y-3 group">
+                    <span class="absolute right-4 bottom-1 text-6xl font-black text-gray-100 pointer-events-none transition-colors group-hover:text-orange-100">05</span>
+                    <div class="w-10 h-10 bg-orange-100 text-[#F58220] rounded-lg flex items-center justify-center text-base font-bold">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 z-10 relative">Mencegah Konflik</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed z-10 relative">Melakukan deteksi dini dan mediasi untuk mencegah potensi konflik bernuansa agama.</p>
+                </div>
+
+                <!-- Misi 06 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden space-y-3 group">
+                    <span class="absolute right-4 bottom-1 text-6xl font-black text-gray-100 pointer-events-none transition-colors group-hover:text-orange-100">06</span>
+                    <div class="w-10 h-10 bg-orange-100 text-[#F58220] rounded-lg flex items-center justify-center text-base font-bold">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 z-10 relative">Memberikan Rekomendasi</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed z-10 relative">Menerbitkan rekomendasi resmi terkait pendirian rumah ibadat sesuai regulasi.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CTA / LINK KE TUGAS DAN FUNGSI SECTION -->
+    <section class="py-12 bg-white border-t border-white">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-4">
+            <h2 class="text-xl md:text-2xl font-extrabold text-[#0B1E36]">Bagaimana FKUB Menjalankan Visi dan Misinya?</h2>
+            <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                Pelajari lebih lanjut tentang tugas, fungsi, dan wewenang konkret kami dalam menjaga kerukunan di Kabupaten Sleman.
+            </p>
+            <div>
+                <a href="Tugas dan Fungsi FKUB.html" class="inline-flex items-center gap-2 bg-[#0B1E36] hover:bg-orange-600 text-white font-bold text-xs px-6 py-3 rounded-lg shadow-md transition-colors uppercase tracking-wider">
+                    Lihat Tugas & Fungsi <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER LENGKAP -->
+    <footer class="bg-[#0B1E36] text-white border-t border-navy-800 pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-gray-800">
+                
+                <!-- Col 1: About -->
+                <div class="space-y-4">
+                    <h3 class="text-base font-bold text-white tracking-wide">FKUB Sleman</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Lembaga bentukan masyarakat yang difasilitasi pemerintah guna membangun, memelihara, dan memberdayakan umat beragama untuk kerukunan dan kesejahteraan.
+                    </p>
+                    <div class="flex items-center space-x-2 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F58220] flex items-center justify-center text-xs transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F58220] flex items-center justify-center text-xs transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F58220] flex items-center justify-center text-xs transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Kontak -->
+                <div class="space-y-3">
+                    <h3 class="text-xs font-bold text-gray-300 uppercase tracking-wider">Kontak Kami</h3>
+                    <ul class="space-y-2.5 text-xs text-gray-400">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-[#F58220] mt-0.5"></i>
+                            <span>Jl. Parasamya No. 1, Beran, Tridadi, Sleman, Yogyakarta 55511</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-[#F58220]"></i>
+                            <span>(0274) 868405</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-envelope text-[#F58220]"></i>
+                            <span>fkubsleman@slemankab.go.id</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Jam Layanan -->
+                <div class="space-y-3">
+                    <h3 class="text-xs font-bold text-gray-300 uppercase tracking-wider">Jam Layanan</h3>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li class="flex justify-between py-1 border-b border-white/5">
+                            <span>Senin - Kamis</span>
+                            <span class="font-semibold text-white">07.30 - 15.30</span>
+                        </li>
+                        <li class="flex justify-between py-1 border-b border-white/5">
+                            <span>Jumat</span>
+                            <span class="font-semibold text-white">07.30 - 14.30</span>
+                        </li>
+                        <li class="flex justify-between py-1">
+                            <span>Sabtu - Minggu</span>
+                            <span class="text-red-400 font-semibold">Tutup</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Map Overlay -->
+                <div class="space-y-3">
+                    <h3 class="text-xs font-bold text-gray-300 uppercase tracking-wider">Peta Lokasi</h3>
+                    <div class="relative rounded-lg overflow-hidden border border-white/10 shadow bg-gray-800 h-28 group">
+                        <!-- ================= TEMPAT MENGGANTI FOTO MAP FOOTER ================= -->
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=500&q=80" alt="Map Preview" class="w-full h-full object-cover opacity-60">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <a href="https://maps.google.com" target="_blank" class="bg-[#0B1E36] hover:bg-[#F58220] text-white font-extrabold text-[10px] uppercase tracking-wider px-3 py-1.5 rounded shadow transition-colors border border-white/20">
+                                BUKA MAPS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright & Quick Links -->
+            <div class="pt-6 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-500 gap-4">
+                <p>© 2024 FKUB Kabupaten Sleman. Seluruh Hak Cipta Dilindungi.</p>
+                <div class="flex items-center space-x-4">
+                    <a href="Tentang_FKUB.html" class="hover:text-gray-300">Profil Organisasi</a>
+                    <a href="#" class="hover:text-gray-300">Kontak Kami</a>
+                    <a href="#" class="hover:text-gray-300">Peta Situs</a>
+                    <a href="#" class="hover:text-gray-300">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Toggle Utama Mobile Navigation Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                hamburgerIcon.classList.remove('fa-xmark');
+                hamburgerIcon.classList.add('fa-bars');
+            } else {
+                hamburgerIcon.classList.remove('fa-bars');
+                hamburgerIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Toggle Sub-menu Dropdown Mobile
+        function toggleMobileDropdown(dropdownId, iconId) {
+            const dropdown = document.getElementById(dropdownId);
+            const icon = document.getElementById(iconId);
+
+            if (dropdown.classList.contains('hidden')) {
+                dropdown.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                dropdown.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
